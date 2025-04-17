@@ -2,48 +2,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Society Homepage</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SBPS - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <header>
-        <h1>Society for Scientific Advancement</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Publications</a>
-            <a href="#">Membership</a>
-            <a href="#">Events</a>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h2>Welcome to Our Scientific Community</h2>
-            <p>Empowering discovery, collaboration, and innovation.</p>
-        </section>
-        <section class="features">
-            <div class="feature">
-                <h3>Research</h3>
-                <p>Explore our cutting-edge scientific publications and journals.</p>
-            </div>
-            <div class="feature">
-                <h3>Membership</h3>
-                <p>Join a vibrant community of scientists and professionals.</p>
-            </div>
-            <div class="feature">
-                <h3>Events</h3>
-                <p>Stay informed about upcoming conferences and seminars.</p>
-            </div>
-            <div class="feature">
-                <h3>Education</h3>
-                <p>Access resources and training for students and educators.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Society for Scientific Advancement</p>
-    </footer>
+
+<header>
+  <div class="logo"><img src="images/logo.jpg" alt="SBPS Logo"/></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="who.html">Who We Are</a></li>
+      <li><a href="mission.html">Mission & Vision</a></li>
+      <li class="dropdown"><a href="services.html">Our Services</a>
+        <ul class="dropdown-content">
+          <li><a href="services.html#sector">Syrian Pharmaceutical Sector</a></li>
+          <li><a href="services.html#recruitment">Recruitment</a></li>
+          <li><a href="services.html#consultancy">Consultancy</a></li>
+          <li><a href="services.html#training">Training & Education</a></li>
+        </ul>
+      </li>
+      <li><a href="membership.html">Society Membership</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to the Syrian Biotech & Pharmaceutical Society</h1>
+    <p>Advancing biomedical and pharmaceutical sciences through knowledge, collaboration, and impact</p>
+  </div>
+</section>
+<div class="container">
+  <h2 class="section-title">Our Core Services</h2>
+  <div class="card-grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1590160448950-2ea7decf6e36?auto=format&fit=crop&w=600&q=80" alt="Pharma Data"/>
+      <div class="card-content">
+        <h3>Syrian Pharmaceutical Sector</h3>
+        <p>In-depth data and analytics on market trends, key players, and growth opportunities.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80" alt="Recruitment"/>
+      <div class="card-content">
+        <h3>Recruitment</h3>
+        <p>Connect with top biotech and pharma talent for your organization.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581090700227-1ee3b54c2f30?auto=format&fit=crop&w=600&q=80" alt="Consultancy"/>
+      <div class="card-content">
+        <h3>Consultancy</h3>
+        <p>Expert guidance in regulatory affairs, drug development, and strategy.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581091215367-7cdbd58b0d07?auto=format&fit=crop&w=600&q=80" alt="Training"/>
+      <div class="card-content">
+        <h3>Training & Education</h3>
+        <p>Workshops, webinars, and resources to enhance professional skills.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>SBPS</h4>
+      <p>Advancing biomedical and pharmaceutical sciences.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="who.html">Who We Are</a></li>
+        <li><a href="mission.html">Mission & Vision</a></li>
+        <li><a href="services.html">Our Services</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <ul>
+        <li>Email: info@sbps.org</li>
+        <li>Phone: +123 456 7890</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 SBPS. All rights reserved.
+  </div>
+</footer>
 </body>
 </html>
+
