@@ -1,103 +1,255 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SBPS - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syrian Biotech & Pharmaceutical Society</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+  <!-- Main Styles -->
+  <style>
+    :root {
+      --primary: #00845A;
+      --secondary: #66B39C;
+      --text: #222222;
+      --bg-base: #FFFFFF;
+      --bg-neutral: #F5F5F5;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--text);
+      background: var(--bg-base);
+      line-height: 1.6;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    /* Utility Bar */
+    .utility-bar {
+      background: var(--bg-neutral);
+      padding: 8px 16px;
+      text-align: right;
+      font-size: 0.9rem;
+    }
+    .utility-bar a {
+      margin-left: 16px;
+      font-weight: 600;
+    }
+    /* Main Navigation */
+    header {
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .main-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    .main-nav img {
+      height: 50px;
+    }
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+    }
+    .main-nav ul li {
+      margin-left: 24px;
+      font-weight: 600;
+    }
+    /* Hero Section */
+    .hero {
+      height: 60vh;
+      background: linear-gradient(135deg, rgba(0,132,90,0.85), rgba(102,179,156,0.85)), 
+                  url('hero.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+    .hero .btn {
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    /* Sections */
+    section {
+      padding: 60px 16px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    /* News & Events Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: var(--bg-neutral);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      display: block;
+    }
+    .card-content {
+      padding: 16px;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+    .card-content p {
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+    .card-content .date {
+      font-size: 0.85rem;
+      color: #666;
+    }
+    /* Quick Links */
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .quick-links a {
+      background: var(--primary);
+      color: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .quick-links a:hover {
+      background: var(--secondary);
+    }
+    /* Footer */
+    footer {
+      background: var(--bg-neutral);
+      padding: 24px 16px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer .social-icons img {
+      height: 24px;
+      margin: 0 8px;
+      vertical-align: middle;
+    }
+    @media(max-width: 768px) {
+      .hero h1 { font-size: 2.5rem; }
+      .main-nav ul li { margin-left: 16px; font-size: 0.9rem; }
+    }
+  </style>
 </head>
 <body>
-
-<header>
-  <div class="logo"><img src="images/logo.jpg" alt="SBPS Logo"/></div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="who.html">Who We Are</a></li>
-      <li><a href="mission.html">Mission & Vision</a></li>
-      <li class="dropdown"><a href="services.html">Our Services</a>
-        <ul class="dropdown-content">
-          <li><a href="services.html#sector">Syrian Pharmaceutical Sector</a></li>
-          <li><a href="services.html#recruitment">Recruitment</a></li>
-          <li><a href="services.html#consultancy">Consultancy</a></li>
-          <li><a href="services.html#training">Training & Education</a></li>
-        </ul>
-      </li>
-      <li><a href="membership.html">Society Membership</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-</header>
-
-<section class="hero">
-  <div class="hero-content">
-    <h1>Welcome to the Syrian Biotech & Pharmaceutical Society</h1>
-    <p>Advancing biomedical and pharmaceutical sciences through knowledge, collaboration, and impact</p>
+  <!-- Utility Bar -->
+  <div class="utility-bar">
+    <a href="#">Members’ Area</a>
+    <a href="#">Donate</a>
+    <a href="#">Search</a>
   </div>
-</section>
-<div class="container">
-  <h2 class="section-title">Our Core Services</h2>
-  <div class="card-grid">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1590160448950-2ea7decf6e36?auto=format&fit=crop&w=600&q=80" alt="Pharma Data"/>
-      <div class="card-content">
-        <h3>Syrian Pharmaceutical Sector</h3>
-        <p>In-depth data and analytics on market trends, key players, and growth opportunities.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80" alt="Recruitment"/>
-      <div class="card-content">
-        <h3>Recruitment</h3>
-        <p>Connect with top biotech and pharma talent for your organization.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1581090700227-1ee3b54c2f30?auto=format&fit=crop&w=600&q=80" alt="Consultancy"/>
-      <div class="card-content">
-        <h3>Consultancy</h3>
-        <p>Expert guidance in regulatory affairs, drug development, and strategy.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1581091215367-7cdbd58b0d07?auto=format&fit=crop&w=600&q=80" alt="Training"/>
-      <div class="card-content">
-        <h3>Training & Education</h3>
-        <p>Workshops, webinars, and resources to enhance professional skills.</p>
-      </div>
-    </div>
-  </div>
-</div>
 
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-column">
-      <h4>SBPS</h4>
-      <p>Advancing biomedical and pharmaceutical sciences.</p>
-    </div>
-    <div class="footer-column">
-      <h4>Quick Links</h4>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="main-nav">
+      <img src="sbps-logo.svg" alt="SBPS Logo">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="who.html">Who We Are</a></li>
-        <li><a href="mission.html">Mission & Vision</a></li>
-        <li><a href="services.html">Our Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Membership</a></li>
+        <li><a href="#">Policy & Advocacy</a></li>
+        <li><a href="#">Publications</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">News & Events</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>Syrian Biotech & Pharmaceutical Society</h1>
+      <button class="btn">Join Us</button>
     </div>
-    <div class="footer-column">
-      <h4>Contact</h4>
-      <ul>
-        <li>Email: info@sbps.org</li>
-        <li>Phone: +123 456 7890</li>
-      </ul>
+  </section>
+
+  <!-- News Section -->
+  <section id="news">
+    <h2 class="section-title">Latest News</h2>
+    <div class="cards">
+      <!-- Example Card -->
+      <div class="card">
+        <img src="news1.jpg" alt="News Image">
+        <div class="card-content">
+          <h3>SBPS Annual Conference 2025</h3>
+          <p>Learn about emerging trends in biotech and pharma.</p>
+          <p class="date">April 10, 2025</p>
+        </div>
+      </div>
+      <!-- Add more cards similarly -->
     </div>
-  </div>
-  <div class="footer-bottom">
-    &copy; 2025 SBPS. All rights reserved.
-  </div>
-</footer>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" style="background: var(--bg-neutral);">
+    <h2 class="section-title">Upcoming Events</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="event1.jpg" alt="Event Image">
+        <div class="card-content">
+          <h3>Biotech Symposium 2025</h3>
+          <p>May 15-17, Damascus, Syria</p>
+        </div>
+      </div>
+      <!-- More event cards -->
+    </div>
+  </section>
+
+  <!-- Quick Links Section -->
+  <section id="quick-links">
+    <h2 class="section-title">Explore</h2>
+    <div class="quick-links">
+      <a href="#">Researchers</a>
+      <a href="#">Members</a>
+      <a href="#">Educators</a>
+      <a href="#">Students</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="#"><img src="icon-facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="icon-twitter.svg" alt="Twitter"></a>
+      <a href="#"><img src="icon-linkedin.svg" alt="LinkedIn"></a>
+    </div>
+    <p>&copy; 2025 Syrian Biotech & Pharmaceutical Society. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
 </body>
 </html>
-
